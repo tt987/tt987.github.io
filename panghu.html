@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>胖虎</title>
+	<style type="text/css">
+		.zuida {
+	width:700px;
+	height:600px;
+	background:#666;
+	position:relative;
+	perspective:800px;
+	margin:0 auto;
+}
+.aa {
+	width:100px;
+	height:100px;
+	position:absolute;
+	left:300px;
+	top:210px;
+	transform-style:preserve-3d;
+	transform-origin:center center;
+	transform:rotateY(0deg) rotateX(0deg);
+	transition:transform 4s linear;
+}
+.aa:hover {
+	transform:rotateY(360deg) rotateX(360deg);
+	transition:transform 4s linear;
+}
+.a1,.a2,.a3,.a4,.a5,.a6 {
+	width:100px;
+	height:100px;
+	position:absolute;
+	color:#fff;
+	opacity:0.5;
+}
+.a1 {
+	background:url(imgs/2.JPG) no-repeat;
+	background-size:100% 100%;
+	left:-50px;
+	transform:rotateY(90deg);
+}
+.a2 {
+	background:url(imgs/2.jpg) no-repeat;
+	background-size:100% 100%;
+	left:50px;
+	transform:rotateY(90deg);
+}
+.a3 {
+	background:url(imgs/3.jpg) no-repeat;
+	background-size:100% 100%;
+	transform:translateZ(50px);
+}
+.a4 {
+	background:url(imgs/4.jpg) no-repeat;
+	background-size:100% 100%;
+	transform:translateZ(-50px);
+}
+.a5 {
+	background:url(imgs/5.jpg) no-repeat;
+	background-size:100% 100%;
+	transform:rotateX(90deg);
+	top:-50px;
+}
+.a6 {
+	background:url(imgs/6.jpg) no-repeat;
+	background-size:100% 100%;
+	transform:rotateX(90deg);
+	top:50px;
+}
+.b1,.b2,.b3,.b4,.b5,.b6 {
+	width:200px;
+	height:200px;
+	position:absolute;
+	opacity:0.8;
+}
+.b1 {
+	left:-150px;
+	top:-50px;
+	transform:rotateY(270deg);
+	background:url(imgs/7.jpg) no-repeat;
+	background-size:100% 100%;
+	transition:left 1.5s;
+}
+.aa:hover .b1 {
+	left:-250px;
+	transition:left 1.5s 0.5s linear;
+}
+.b2 {
+	left:50px;
+	top:-50px;
+	transform:rotateY(270deg);
+	background:url(imgs/8.jpg) no-repeat;
+	background-size:100% 100%;
+	transition:left 1.5s;
+
+}
+.aa:hover .b2 {
+	left:150px;
+	transition:left 1.5s 0.5s linear;
+}
+.b3 {
+	left:-50px;
+	top:-50px;
+	transform:translateZ(100px);
+	background:url(imgs/10.jpg) no-repeat;
+	background-size:100% 100%;
+	transition:transform 1.5s;
+}
+.aa:hover .b3 {
+	transform:translateZ(200px);
+	transition:transform 1.5s 0.5s linear;
+}
+.b4 {
+	left:-50px;
+	top:-50px;
+	transform:translateZ(-100px);
+	background:url(imgs/9.jpg) no-repeat;
+	background-size:100% 100%;
+	transition:transform 1.5s;
+}
+.aa:hover .b4 {
+	transform:translateZ(-200px);
+	transition:transform 1.5s 0.5s linear;
+}
+.b5 {
+	left:-50px;
+	top:-150px;
+	transform:rotateX(90deg);
+	background:url(imgs/11.jpg) no-repeat;
+	background-size:100% 100%;
+	transition:top 1.5s;
+}
+.aa:hover .b5 {
+	top:-250px;
+	transition:top 1.5s 0.5s linear;
+}
+.b6 {
+	left:-50px;
+	top:50px;
+	transform:rotateX(90deg);
+	background:url(imgs/12.JPG) no-repeat;
+	background-size:100% 100%;
+	transition:top 1.5s linear;
+}
+.aa:hover .b6 {
+	top:150px;
+	transition:top 1.5s 0.5s linear;
+}
+
+	</style>
+</head>
+<body>
+<div class="zuida">
+    <div class="aa">
+        <div class="bb"></div>
+        <div class="a1"></div>
+        <div class="a2"></div>
+        <div class="a3"></div>
+        <div class="a4"></div>
+        <div class="a5"></div>
+        <div class="a6"></div>
+        <div class="b1"></div>
+        <div class="b2"></div>
+        <div class="b3"></div>
+        <div class="b4"></div>
+        <div class="b5"></div>
+        <div class="b6"></div>
+    </div>
+</div>
+	
+</body>
+</html>
